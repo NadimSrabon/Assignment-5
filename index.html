@@ -515,14 +515,17 @@
         </div>
         </nav>
         <!-- Open the modal using ID.showModal() method -->
-        <dialog id="my_modal_1" class="modal">
-            <div class="modal-box">
-                <h3 class="font-bold text-lg">Hello!</h3>
-                <p class="py-4">Press ESC key or click the button below to close</p>
+        <dialog id="my_modal_1" class="modal font-raleway">
+            <div class="modal-box h-[450px] w-[700px]">
+                <!-- <h3 class="font-bold text-lg">Hello World!</h3> -->
+                <img class="mt-8 mx-44" src="images/success.png" alt="">
+                <p class="text-[#27AE60] text-[24px] font-[700] px-44 pt-5">Success</p>
+                <p class="text-[#4A4A4A] text-[20px] font-[500] pt-3 px-20">Thanks for Booking Our Bus Seats.Shortly you will find a confirmation in your email.</p>
+                <button class="h-[55px] w-[300px] bg-[#27ae60] text-[white]text-[25px] font-[600] rounded-full mt-4 mx-20">Continue</button>
                 <div class="modal-action">
                     <form method="dialog">
                         <!-- if there is a button in form, it will close the modal -->
-                        <button class="btn">Close</button>
+                        <button class="-mt-16" class="btn">Close</button>
                     </form>
                 </div>
             </div>
