@@ -1,18 +1,7 @@
 
-// function getClick(){
-//     const btn = document.querySelectorAll('h4')
-//     console.log(btn)
-//     btn.classList.add('bg-green-400');
-
-// }
-
 let arr = [];
 function changeColor(buttonNumber) {
-    // Reset background color for all buttons
-    // for (let i = 1; i <= 10; i++) {
-    //   const button = document.getElementById('button' + i);
-    //   button.style.backgroundColor = '';
-    // }
+    
     if(arr.length >= 4){
         alert("Sorry You Can Not Pick More Than 4 seats");
         return
@@ -27,6 +16,8 @@ let seat = 40;
 let count = 1;
 let total = 0;
 let grandTotal = 0;
+
+
 const random = document.querySelectorAll(".dus")
 
  for(let i = 0; i<random.length;i++){
@@ -35,6 +26,8 @@ const random = document.querySelectorAll(".dus")
 
 
     btn.addEventListener("click", function(){
+
+   
 
         const remainSeat = document.getElementById("seat-left");
         remainSeat.innerText=seat-1;
@@ -47,10 +40,8 @@ const random = document.querySelectorAll(".dus")
 
 
         const sit = document.getElementById("seat-name");
-        // const li = document.createElement("li");
         const p = document.createElement("p");
         p.innerText=btn.innerText
-        // li.appendChild(p)
         sit.appendChild(p)
 
 
@@ -81,7 +72,6 @@ const random = document.querySelectorAll(".dus")
  const btnPressed = document.getElementById("apply-btn");
  btnPressed.addEventListener("click",function(){
     const couponElement = document.getElementById("input-field").value;
-    // const couponCode = couponElement.split(' ').join("").toUppercase();
     const totalPrice = parseFloat(document.getElementById("total-price").innerText)
     const grandTotalPrice = parseFloat(document.getElementById("grand-total").innerText)
     if(totalPrice >=2200){
@@ -103,7 +93,6 @@ const random = document.querySelectorAll(".dus")
         }else{
             alert("Invalid Coupon")
             return
-            // document.getElementById("input-field").value = "";
 
     }
 
